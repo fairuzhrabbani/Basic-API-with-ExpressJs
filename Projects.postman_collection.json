@@ -1,0 +1,161 @@
+{
+	"info": {
+		"_postman_id": "8d8562f1-b77f-4986-99f0-9be129dab78a",
+		"name": "Projects",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10216134"
+	},
+	"item": [
+		{
+			"name": "Get All Data Warga",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/v1/warga",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"warga"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search Warga by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/warga/11",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"warga",
+						"11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search Warga by Tempat Tinggal RT",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/rt?tempat_tinggal_rt=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"rt"
+					],
+					"query": [
+						{
+							"key": "tempat_tinggal_rt",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Menambahkan Data Warga",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nama_lengkap\": \"Juminah Elmira assfddd\",\r\n    \"tempat_lahir\": \"Jakarta\",\r\n    \"tanggal_lahir\": \"2024-05-06\",\r\n    \"jenis_kelamin\": \"Perempuan\",\r\n    \"alamat\": \"KP.Cakung No 42\",\r\n    \"rt\": \"2\",\r\n    \"rw\": \"2\",\r\n    \"kelurahan_desa\": \"Cakung Barat\",\r\n    \"kecamatan\": \"Cakung\",\r\n    \"agama\": \"Islam\",\r\n    \"status_perkawinan\": \"Kawin\",\r\n    \"pekerjaan\": \"Ibu Rumah Tanggal\",\r\n    \"kewarganegaraan\": \"WNI\",\r\n    \"no_telepon1\": \"085777627791\",\r\n    \"no_telepon2\": null,\r\n    \"tempat_tinggal_rt\": \"2\",\r\n    \"tempat_tinggal_rw\": \"2\",\r\n    \"no_rumah\": null,\r\n    \"status_warga\": \"Warga Asli\",\r\n    \"status_tempat_tinggal\": \"Rumah\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/v1/warga",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"warga"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mengubah Data Warga",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nama_lengkap\": \"Aburizal\",\r\n    \"tempat_lahir\": \"Jakarta\",\r\n    \"tanggal_lahir\": \"2024-05-06\",\r\n    \"jenis_kelamin\": \"Laki-Laki\",\r\n    \"alamat\": \"KP.Cakung No 42\",\r\n    \"rt\": \"2\",\r\n    \"rw\": \"2\",\r\n    \"kelurahan_desa\": \"Cakung Barat\",\r\n    \"kecamatan\": \"Cakung\",\r\n    \"agama\": \"Islam\",\r\n    \"status_perkawinan\": \"Kawin\",\r\n    \"pekerjaan\": \"Ibu Rumah Tanggal\",\r\n    \"kewarganegaraan\": \"WNI\",\r\n    \"no_telepon1\": \"085777627791\",\r\n    \"no_telepon2\": null,\r\n    \"tempat_tinggal_rt\": \"2\",\r\n    \"tempat_tinggal_rw\": \"2\",\r\n    \"no_rumah\": null,\r\n    \"status_warga\": \"Warga Asli\",\r\n    \"status_tempat_tinggal\": \"Rumah\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/warga/55",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"warga",
+						"55"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Menghapus Data Warga",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/warga/17",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"warga",
+						"17"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
